@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TBR Web Service diseña sitios web que convierten visitas en clientes." />
+  <meta name="description" content="TBR Web Service diseña y desarrolla sitios web claros, rápidos y pensados para convertir visitas en consultas." />
   <meta name="theme-color" content="#08080a" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tbrws.com/" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TBR Web Service" />
+  <meta property="og:title" content="TBR Web Service — Diseño y desarrollo web" />
+  <meta property="og:description" content="Sitios web claros, rápidos y pensados para convertir visitas en consultas." />
+  <meta property="og:url" content="https://tbrws.com/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="TBR Web Service — Diseño y desarrollo web" />
+  <meta name="twitter:description" content="Sitios web claros, rápidos y pensados para convertir visitas en consultas." />
   <title>TBR Web Service — Diseño y desarrollo web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,16 +67,8 @@
     .brand { gap:0; }
     .brand-logo { display:block; width:auto; height:38px; object-fit:contain; }
     footer .brand-logo { height:32px; }
-    .p-electro { padding:16px; color:#111; background:#f8f7f5; }
-    .electro-strip { display:flex; justify-content:space-around; gap:8px; padding:6px 4px; border-bottom:1px solid #deddda; color:#54514d; font-size:7px; letter-spacing:.03em; }
-    .electro-nav { display:flex; align-items:center; justify-content:space-between; padding:13px 4px; font-size:8px; }
-    .electro-nav span { display:flex; gap:12px; }.electro-nav b { font:22px/1 var(--serif); letter-spacing:.04em; }.electro-icons { font-size:13px; letter-spacing:4px; }
-    .electro-kicker { margin-top:9px; color:#77716b; font-size:7px; font-weight:700; letter-spacing:.2em; text-align:center; }.p-electro h4 { max-width:340px; margin:11px auto 15px; color:#121110; font:clamp(23px,3vw,38px)/.95 var(--serif); text-align:center; }
-    .electro-search { width:min(84%,420px); margin:0 auto 14px; padding:9px 13px; border:1px solid #d7d4d0; border-radius:7px; color:#807c77; font-size:8px; }.electro-cats { display:flex; justify-content:space-between; gap:7px; padding:9px 0; border-top:1px solid #d9d6d2; border-bottom:1px solid #d9d6d2; color:#4e4a46; font-size:7px; letter-spacing:.06em; overflow:hidden; white-space:nowrap; }
-    .electro-products { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:13px; }.electro-product { min-width:0; }.electro-photo { position:relative; display:grid; place-items:center; height:82px; overflow:hidden; background:linear-gradient(145deg,#e9e8e6,#d6d4d1); }.electro-photo:before,.electro-photo:after { content:''; position:absolute; display:block; }.electro-phone:before { width:25px; height:55px; border-radius:6px; background:linear-gradient(135deg,#222,#949494); box-shadow:13px 0 0 #303030; }.electro-laptop:before { width:54px; height:31px; border:2px solid #9b9b9b; border-bottom:5px solid #aaa; transform:perspective(40px) rotateX(-10deg); }.electro-headphones:before { width:40px; height:45px; border:9px solid #bcbab5; border-bottom:0; border-radius:50% 50% 0 0; }.electro-headphones:after { width:44px; height:20px; top:46px; border-radius:10px; background:radial-gradient(circle at 9px 9px,#bbb 0 8px,transparent 9px),radial-gradient(circle at 35px 9px,#bbb 0 8px,transparent 9px); }.electro-watch:before { width:29px; height:45px; border-radius:9px; background:#252525; box-shadow:0 -20px 0 -7px #252525,0 20px 0 -7px #252525; }.electro-product b { display:block; margin-top:6px; color:#1d1b19; font:11px/1.1 var(--serif); }.electro-product small { display:block; margin-top:3px; color:#77716b; font-size:7px; }.electro-product strong { display:block; margin-top:5px; font-size:8px; }.electro-product button { width:100%; margin-top:6px; padding:5px 2px; border:1px solid #7e7a76; background:transparent; color:#292624; font-size:6px; letter-spacing:.08em; }
-    @media(max-width:610px){ .electro-strip span:nth-child(n+3),.electro-nav span,.electro-cats span:nth-child(n+5){display:none}.electro-products{gap:5px}.electro-photo{height:65px}.electro-product b{font-size:9px}.electro-product small{display:none} }
-    .electro-stock { position:absolute; top:7px; left:7px; z-index:1; padding:3px 5px; background:rgba(255,255,255,.92); color:#35312e; font-size:6px; font-weight:700; letter-spacing:.06em; }
-    .electro-product small { min-height:26px; line-height:1.28; }
+    .p-stock { display:grid; place-items:center; padding:0; background:#171411; }
+    .p-stock img { display:block; width:100%; height:100%; object-fit:contain; }
     .project { cursor:pointer; }
     .project:focus-visible { outline:2px solid var(--copper); outline-offset:4px; }
     .project::after { content:'Ver proyecto'; position:absolute; top:18px; right:18px; z-index:3; padding:6px 10px; border:1px solid rgba(255,255,255,.18); border-radius:999px; background:rgba(8,8,10,.7); color:#fff; font-size:11px; font-weight:600; opacity:0; transform:translateY(-4px); transition:opacity .2s,transform .2s; }
@@ -79,12 +82,90 @@
     .project-close { position:absolute; top:18px; right:18px; width:36px; height:36px; padding:0; border:1px solid var(--line2); border-radius:50%; background:transparent; color:#fff; font-size:22px; line-height:1; cursor:pointer; }
     .project-close:hover { border-color:var(--copper); color:var(--copper); }
     @media(max-width:610px){ .project::after { opacity:1; transform:none; top:12px; right:12px; }.project-bubble { padding:30px 24px; } }
+    /* Motion system: intentionally subtle, GPU-friendly and optional. */
+    .hero { position:relative; isolation:isolate; background:radial-gradient(ellipse 53% 44% at 88% 45%,#19150f 0%,rgba(25,21,15,0) 65%); }
+    .hero::before,.hero::after { content:""; position:absolute; inset:0; pointer-events:none; z-index:-1; }
+    .hero::before { opacity:.75; background:radial-gradient(circle at 76% 28%,rgba(204,145,102,.15),transparent 24%),radial-gradient(circle at 18% 80%,rgba(76,77,114,.13),transparent 25%); background-size:140% 140%; animation:heroGlow 14s ease-in-out infinite alternate; }
+    .hero::after { opacity:.035; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E"); }
+    .hero-grid { position:relative; }
+    .hero .eyebrow { animation:heroEnter .6s .05s both; }
+    .hero h1 { animation:heroEnter .7s .12s both; }
+    .hero .lead { animation:heroEnter .7s .2s both; }
+    .hero-actions { animation:heroEnter .7s .28s both; }
+    .proof { animation:heroEnter .7s .36s both; }
+    .browser { animation:floatFrame 7s ease-in-out infinite; will-change:transform; }
+    .browser:hover { animation-play-state:paused; }
+    .button { position:relative; overflow:hidden; transition:transform .24s ease,background .24s ease,border-color .24s ease,box-shadow .24s ease; }
+    .button-light:hover { box-shadow:0 10px 26px rgba(255,255,255,.16); }
+    .button-ghost:hover { border-color:var(--copper); box-shadow:0 9px 24px rgba(204,145,102,.12); }
+    .hero-actions .button::after,.cta .button::after { content:"→"; margin-left:0; opacity:0; transform:translateX(-6px); transition:margin .24s ease,opacity .24s ease,transform .24s ease; }
+    .hero-actions .button:hover::after,.cta .button:hover::after { margin-left:8px; opacity:1; transform:none; }
+    .service,.project,.benefit,.step,.quote,.form { transition:transform .28s ease,background .28s ease,border-color .28s ease,box-shadow .28s ease; }
+    .project::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; opacity:0; box-shadow:inset 0 0 0 1px rgba(204,145,102,.6),0 18px 45px rgba(0,0,0,.32); transition:opacity .28s ease; }
+    .project:hover::after,.project:focus-visible::after { opacity:1; }
+    .project:focus-visible,.button:focus-visible,.service:focus-visible { outline:2px solid var(--copper); outline-offset:4px; }
+    .benefit:hover { transform:translateX(7px); border-color:rgba(204,145,102,.5); }
+    .benefit:hover .benefit-icon { border-color:var(--copper); box-shadow:0 0 0 4px rgba(204,145,102,.09); }
+    .step:hover { transform:translateY(-5px); }
+    .quote:hover { transform:translateY(-4px); border-color:var(--copper); }
+    .reveal { transition:opacity .65s cubic-bezier(.2,.75,.25,1),transform .65s cubic-bezier(.2,.75,.25,1); }
+    .reveal > .service,.reveal > .step,.reveal > .project,.reveal > .quote { transition-delay:var(--stagger,0ms); }
+    .reveal.show > .service,.reveal.show > .step,.reveal.show > .project,.reveal.show > .quote { animation:itemRise .55s cubic-bezier(.2,.75,.25,1) both; animation-delay:var(--stagger,0ms); }
+    .parallax { will-change:transform; }
+    .browser.parallax { transform:translate3d(var(--parallax-x,0px),var(--parallax-y,0px),0) rotate(2.5deg); }
+    .browser.parallax:hover { transform:translate3d(var(--parallax-x,0px),calc(var(--parallax-y,0px) - 5px),0) rotate(0deg); }
+    .project-ui.parallax { transform:translate3d(var(--parallax-x,0px),var(--parallax-y,0px),0) scale(1.01); transition:transform .5s ease; }
+    .project:hover .project-ui.parallax { transform:translate3d(var(--parallax-x,0px),calc(var(--parallax-y,0px) - 5px),0) scale(1.025); }
+    @keyframes heroGlow { from { background-position:0% 45%; } to { background-position:100% 55%; } }
+    @keyframes floatFrame { 0%,100% { translate:0 0; } 50% { translate:0 -9px; } }
+    @keyframes heroEnter { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:none; } }
+    @keyframes itemRise { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+    @media(max-width:610px){ .benefit:hover,.step:hover,.quote:hover{transform:none}.hero::before{opacity:.55} }
+    @media(prefers-reduced-motion:reduce){ .hero::before,.browser,.hero .eyebrow,.hero h1,.hero .lead,.hero-actions,.proof,.reveal.show > .service,.reveal.show > .step,.reveal.show > .project,.reveal.show > .quote{animation:none!important}.parallax,.browser.parallax,.project-ui.parallax,.browser.parallax:hover,.project:hover .project-ui.parallax{transform:none!important}.button,.service,.project,.benefit,.step,.quote,.form{transition:none} }
+    .form-privacy{margin:15px 0 0;color:var(--fog);font-size:12px;line-height:1.45}.form-privacy a{color:var(--bone);text-decoration:underline;text-underline-offset:2px}.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}.form .button[disabled]{cursor:wait;opacity:.72;transform:none}
+
+    /* Paleta de TBR: azul marino y azul el?ctrico del logo. */
+    :root { --void:#08080a; --card:#101114; --panel:#161a22; --line:#20242c; --line2:#354255; --fog:#b3c3d9; --bone:#e5edfa; --copper:#88b2ff; }
+    .topbar { background:rgba(8,8,10,.92); }
+    .brand-logo { background:#fff; border-radius:6px; padding:4px 7px; }
+    .button-light { background:#0646d0; color:#fff; }
+    .button-light:hover { background:#0753f8; box-shadow:0 10px 26px rgba(7,83,248,.3); }
+    .button-ghost { border-color:#6385b7; }
+    .button-ghost:hover { box-shadow:0 9px 24px rgba(7,83,248,.2); }
+    .hero { background:radial-gradient(ellipse 53% 44% at 88% 45%,#102859 0%,rgba(16,40,89,0) 65%); }
+    .hero::before { background:radial-gradient(circle at 76% 28%,rgba(7,83,248,.25),transparent 24%),radial-gradient(circle at 18% 80%,rgba(45,112,224,.14),transparent 25%); }
+    .cta { background:radial-gradient(ellipse 40% 65% at 50% 65%,#102451,transparent 70%); }
+    .mini-btn,.preview-list div:first-child { background:#0753f8; }
+    .preview-list div:nth-child(2) { background:linear-gradient(135deg,#10284d 40%,#416db5 40%); }
+    .stat-line { background:linear-gradient(90deg,#0753f8,#a9caff 45%,rgba(7,83,248,0)); }
+    .nav-whatsapp,.whatsapp { border-color:#41669e; background:#10151e; }
+    .nav-whatsapp:hover { background:#123d88; }
+    .field input,.field textarea { background:#101114; }
+    .field input:focus,.field textarea:focus { border-color:#88b2ff; }
+    .project-dialog { background:#141820; border-color:#34527e; }
+    .project::after { box-shadow:inset 0 0 0 1px rgba(136,178,255,.6),0 18px 45px rgba(0,0,0,.32); }
+    .benefit:hover { border-color:rgba(136,178,255,.5); }
+    .benefit:hover .benefit-icon { box-shadow:0 0 0 4px rgba(7,83,248,.14); }
+    @media(max-width:900px){ .menu.open + .navlinks { background:#101114; } }
   </style>
+  <script src="site-config.js"></script>
+  <script src="analytics.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "TBR Web Service",
+      "url": "https://tbrws.com/",
+      "email": "tomasbenjaminramos2000@gmail.com",
+      "telephone": "+54 9 3548 563333",
+      "description": "Diseño y desarrollo web para negocios y profesionales."
+    }
+  </script>
 </head>
 <body>
   <header class="topbar" id="inicio"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="TBR Web Service, inicio"><span class="brand-mark">T</span><span>TBR Web Service</span></a><div class="navlinks" id="navlinks"><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a></div><a class="button button-light" href="#contacto">Hablemos</a><button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button></div></header>
   <main>
-    <section class="hero"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow">Diseño + desarrollo web</div><h1>Sitios que convierten visitas en clientes.</h1><p class="lead">Creamos experiencias web claras, veloces y hechas a medida para que tu negocio se vea tan bien como trabaja.</p><div class="hero-actions"><a class="button button-light" href="#contacto">Solicitar presupuesto</a><a class="button button-ghost" href="#proyectos">Ver proyectos</a></div><div class="proof"><div class="proof-stack"><span></span><span></span><span></span></div><span>Aliados de negocios que quieren crecer en digital.</span></div></div><div class="browser reveal" aria-label="Vista previa de un sitio web diseñado por TBR"><div class="browser-top"><div class="dots"><i></i><i></i><i></i></div><div class="browser-url"></div></div><div class="site-preview"><div class="preview-brand">atelier casa</div><div class="preview-hero"><div class="preview-copy"><b>Espacios que se sienten tuyos.</b><span></span><span></span><div class="mini-btn"></div></div><div class="preview-card"><div class="chart-label">PROYECTOS REALIZADOS</div><div class="chart-num">3</div><div class="chart"><svg viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#ae9357"/><stop offset=".4" stop-color="#fff0cc"/><stop offset=".75" stop-color="#ae9357"/><stop offset="1" stop-color="#ae9357" stop-opacity="0"/></linearGradient></defs><path d="M0,58 C20,46 33,52 48,37 S77,48 93,25 S124,38 143,21 S177,20 200,4" fill="none" stroke="url(#gold)" stroke-width="2"/></svg></div></div></div><div class="preview-list"><div></div><div></div><div></div></div></div></div></div></section>
+    <section class="hero"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow">Diseño + desarrollo web</div><h1>Sitios que convierten visitas en clientes.</h1><p class="lead">Creamos experiencias web claras, veloces y hechas a medida para que tu negocio se vea tan bien como trabaja.</p><div class="hero-actions"><a class="button button-light" href="#contacto">Solicitar presupuesto</a><a class="button button-ghost" href="#proyectos">Ver proyectos</a></div><div class="proof"><div class="proof-stack"><span></span><span></span><span></span></div><span>Aliados de negocios que quieren crecer en digital.</span></div></div><div class="browser reveal" aria-label="Vista previa de un sitio web diseñado por TBR"><div class="browser-top"><div class="dots"><i></i><i></i><i></i></div><div class="browser-url"></div></div><div class="site-preview"><div class="preview-brand">atelier casa</div><div class="preview-hero"><div class="preview-copy"><b>Espacios que se sienten tuyos.</b><span></span><span></span><div class="mini-btn"></div></div><div class="preview-card"><div class="chart-label">PROYECTOS REALIZADOS</div><div class="chart-num">3</div><div class="chart"><svg viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#0753f8"/><stop offset=".4" stop-color="#93b9ff"/><stop offset=".75" stop-color="#0753f8"/><stop offset="1" stop-color="#0753f8" stop-opacity="0"/></linearGradient></defs><path d="M0,58 C20,46 33,52 48,37 S77,48 93,25 S124,38 143,21 S177,20 200,4" fill="none" stroke="url(#gold)" stroke-width="2"/></svg></div></div></div><div class="preview-list"><div></div><div></div><div></div></div></div></div></div></section>
     <section class="services" id="servicios"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">Lo que hacemos</div><h2>Una presencia digital pensada para avanzar.</h2><p class="section-copy">Elegimos la solución adecuada para tu momento de negocio. Sin plantillas genéricas, sin vueltas innecesarias.</p></div><div class="service-grid reveal"><article class="service"><span class="service-num">01</span><h3>Diseño web</h3><p>Webs institucionales con identidad propia y una experiencia que se entiende al primer vistazo.</p></article><article class="service"><span class="service-num">02</span><h3>Landing pages</h3><p>Páginas de campaña enfocadas en una acción concreta: consultas, ventas o lanzamientos.</p></article><article class="service"><span class="service-num">03</span><h3>Tiendas online</h3><p>Catálogos y e-commerce simples de gestionar, preparados para vender desde cualquier pantalla.</p></article><article class="service"><span class="service-num">04</span><h3>Rediseño web</h3><p>Ordenamos lo que ya existe para que tu web vuelva a representar el nivel de tu negocio.</p></article><article class="service"><span class="service-num">05</span><h3>Mantenimiento</h3><p>Mejoras, actualizaciones y acompañamiento para que el sitio no se quede atrás.</p></article></div></div></section>
     <section><div class="wrap why-grid"><div class="reveal"><div class="eyebrow">Por qué TBR</div><h2>Menos ruido. Más claridad para vender.</h2><p class="section-copy">El diseño no es un adorno: es la forma de hacer que cada persona encuentre rápido por qué elegirte.</p></div><div class="benefits reveal"><div class="benefit"><span class="benefit-icon">✦</span><div><b>Diseño a medida</b><p>Tu marca, tu voz y tus objetivos son el punto de partida.</p></div><span>01</span></div><div class="benefit"><span class="benefit-icon">↗</span><div><b>Rápido de verdad</b><p>Un sitio ágil para que nadie se vaya antes de conocerte.</p></div><span>02</span></div><div class="benefit"><span class="benefit-icon">⌁</span><div><b>Hecho para celular</b><p>La experiencia se adapta sin perder detalle ni intención.</p></div><span>03</span></div><div class="benefit"><span class="benefit-icon">◎</span><div><b>Foco en conversiones</b><p>Arquitectura y mensajes que acompañan la decisión.</p></div><span>04</span></div><div class="benefit"><span class="benefit-icon">+</span><div><b>Soporte cercano</b><p>Seguimos disponibles cuando tu negocio cambia o crece.</p></div><span>05</span></div></div></div></section>
     <section class="process" id="proceso"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">Cómo trabajamos</div><h2>Un proceso simple, con cada paso a la vista.</h2></div><div class="steps reveal"><article class="step"><small>01 / 04</small><h3>Descubrimiento</h3><p>Entendemos tu negocio, cliente ideal y qué tiene que lograr el sitio.</p></article><article class="step"><small>02 / 04</small><h3>Diseño</h3><p>Le damos forma a la estructura, la identidad visual y la experiencia.</p></article><article class="step"><small>03 / 04</small><h3>Desarrollo</h3><p>Convertimos el diseño en una web veloz, sólida y adaptable.</p></article><article class="step"><small>04 / 04</small><h3>Lanzamiento</h3><p>Publicamos, revisamos los detalles y te acompañamos en el despegue.</p></article></div></div></section>
@@ -99,7 +180,6 @@
     const menu=document.querySelector('.menu'), nav=document.querySelector('.navlinks'); menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));menu.textContent=open?'☰':'×';menu.classList.toggle('open',!open)}); nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');menu.textContent='☰';menu.classList.remove('open')}));
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
     addEventListener('scroll',()=>document.querySelector('.topbar').classList.toggle('scrolled',scrollY>15),{passive:true});
-    document.querySelector('#contact-form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget),subject=encodeURIComponent('Consulta desde TBR Web Service'),body=encodeURIComponent(`Nombre: ${f.get('nombre')}\nEmpresa: ${f.get('empresa')||'—'}\nEmail: ${f.get('email')}\n\nProyecto:\n${f.get('mensaje')}`);document.querySelector('.form-status').textContent='Abrimos tu correo para que puedas enviar la consulta.';location.href=`mailto:hola@tbrwebservice.com?subject=${subject}&body=${body}`});
   </script>
   <script>
     const uthgraProject=document.querySelector('.project:nth-child(2)');
@@ -115,20 +195,21 @@
       hotelProject.querySelector('.project-title h3').textContent = 'Hotel UTHGRA Los Cocos';
     }
 
-    const electroProject = document.querySelector('.project:nth-child(1)');
-    if (electroProject) {
-      const ui = electroProject.querySelector('.project-ui');
-      ui.className = 'project-ui p-electro';
-      ui.innerHTML = `<div class="electro-strip"><span>Envíos a todo el país</span><span>Hasta 12 cuotas sin interés</span><span>Garantía oficial en todos los productos</span><span>Asesoramiento personalizado</span></div><div class="electro-nav"><span>Productos⌄ &nbsp; Marcas⌄ &nbsp; Ofertas &nbsp; Novedades</span><b>ELECTRO</b><i class="electro-icons">⌕ ♙ ♧</i></div><div class="electro-kicker">TECNOLOGÍA SELECCIONADA</div><h4>Todo lo que buscás,<br>en un solo lugar.</h4><div class="electro-search">⌕ &nbsp; Buscar productos, marcas o categorías...</div><div class="electro-cats"><span>SMARTPHONES</span><span>NOTEBOOKS</span><span>AURICULARES</span><span>SMARTWATCHES</span><span>TABLETS</span><span>ACCESORIOS</span><span>HOGAR INTELIGENTE</span><span>AUDIO Y VIDEO</span><span>VER TODO →</span></div><div class="electro-products"><div class="electro-product"><div class="electro-photo electro-phone"><span class="electro-stock">EN STOCK</span></div><b>Smartphone Pro</b><small>ELECTRO<br>Diseño en titanio. Máximo rendimiento para tu día a día.</small><strong>$ 1.499.999</strong><button>VER PRODUCTO &nbsp; →</button></div><div class="electro-product"><div class="electro-photo electro-laptop"><span class="electro-stock">EN STOCK</span></div><b>Ultrabook Air</b><small>ELECTRO<br>Liviana, potente y lista para acompañarte en todo momento.</small><strong>$ 1.299.999</strong><button>VER PRODUCTO &nbsp; →</button></div><div class="electro-product"><div class="electro-photo electro-headphones"><span class="electro-stock">EN STOCK</span></div><b>Auriculares Noise Cancelling</b><small>ELECTRO<br>Sonido inmersivo. Conectá con lo que importa.</small><strong>$ 499.999</strong><button>VER PRODUCTO &nbsp; →</button></div><div class="electro-product"><div class="electro-photo electro-watch"><span class="electro-stock">EN STOCK</span></div><b>Smartwatch Series</b><small>ELECTRO<br>Tu salud, tu actividad, siempre con vos.</small><strong>$ 399.999</strong><button>VER PRODUCTO &nbsp; →</button></div></div>`;
-      electroProject.querySelector('.project-title small').textContent = 'E-commerce · Tecnología';
-      electroProject.querySelector('.project-title h3').textContent = 'ELECTRO';
+    const stockProject = document.querySelector('.project:nth-child(1)');
+    if (stockProject) {
+      const ui = stockProject.querySelector('.project-ui');
+      ui.className = 'project-ui p-stock';
+      ui.innerHTML = '<img src="control-stock-hotel-uthgra.png" alt="Panel de control de stock del Hotel UTHGRA Los Cocos" loading="lazy" />';
+      stockProject.querySelector('.project-title small').textContent = 'Sistema de gestión · Hotelería';
+      stockProject.querySelector('.project-title h3').textContent = 'Control de stock · Hotel UTHGRA';
     }
 
 
     const logoMarkup = '<img class="brand-logo" src="logo-tbr.png" alt="TBR Web Service" />';
     document.querySelectorAll('.brand').forEach(brand => brand.innerHTML = logoMarkup);
 
-    const whatsappUrl = 'https://wa.me/5493548563333';
+    const whatsappMessage = 'Hola, quiero solicitar un presupuesto para una página web.';
+    const whatsappUrl = `https://wa.me/5493548563333?text=${encodeURIComponent(whatsappMessage)}`;
     const whatsappLink = document.querySelector('.contact-line a[href*="wa.me"]');
     if (whatsappLink) {
       whatsappLink.href = whatsappUrl;
@@ -136,6 +217,9 @@
     }
     const floatingWhatsapp = document.querySelector('.whatsapp');
     if (floatingWhatsapp) floatingWhatsapp.href = whatsappUrl;
+    document.querySelectorAll('a[href*="wa.me"]').forEach(link => link.addEventListener('click', () => {
+      if (typeof window.tbrTrack === 'function') window.tbrTrack('whatsapp_click');
+    }));
 
     const talkButton = document.querySelector('.topbar .button-light');
     if (talkButton && !document.querySelector('.nav-actions')) {
@@ -150,6 +234,9 @@
     document.querySelectorAll('a[href="mailto:hola@tbrwebservice.com"]').forEach(link => {
       link.href = `mailto:${contactEmail}`;
       link.textContent = contactEmail;
+      link.addEventListener('click', () => {
+        if (typeof window.tbrTrack === 'function') window.tbrTrack('email_click');
+      });
     });
     const locationText = document.querySelector('#contacto .contact-line:last-child span:last-child');
     if (locationText) locationText.textContent = 'Córdoba, Argentina';
@@ -159,22 +246,85 @@
       contactIntro.insertAdjacentHTML('afterend', '<p class="response-note"><span aria-hidden="true"></span>Atención inmediata por WhatsApp.</p>');
     }
 
+    const footerSocials = document.querySelector('.socials');
+    if (footerSocials && !footerSocials.querySelector('[href="privacy.html"]')) {
+      footerSocials.insertAdjacentHTML('beforeend', '<a href="privacy.html">Privacidad</a>');
+    }
+
     const previousContactForm = document.querySelector('#contact-form');
     if (previousContactForm) {
       const contactForm = previousContactForm.cloneNode(true);
       previousContactForm.replaceWith(contactForm);
-      contactForm.addEventListener('submit', event => {
+      contactForm.noValidate = true;
+      contactForm.querySelector('[name="nombre"]').setAttribute('maxlength', '120');
+      contactForm.querySelector('[name="empresa"]').setAttribute('maxlength', '160');
+      contactForm.querySelector('[name="mensaje"]').setAttribute('maxlength', '3000');
+      contactForm.insertAdjacentHTML('beforeend', '<label class="form-honeypot" aria-hidden="true">No completar<input name="website" tabindex="-1" autocomplete="off" /></label><p class="form-privacy">Al enviar aceptás que usemos tus datos para responder esta consulta. Leé nuestra <a href="privacy.html">Política de privacidad</a>.</p>');
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const formStatus = contactForm.querySelector('.form-status');
+      const formEndpoint = window.TBR_CONFIG?.contact?.endpoint;
+
+      const trackContactEvent = name => {
+        if (typeof window.tbrTrack === 'function') window.tbrTrack(name);
+      };
+
+      contactForm.addEventListener('submit', async event => {
         event.preventDefault();
         const formData = new FormData(contactForm);
-        const subject = encodeURIComponent('Consulta desde TBR Web Service');
-        const body = encodeURIComponent(`Nombre: ${formData.get('nombre')}\nEmpresa: ${formData.get('empresa') || '—'}\nEmail: ${formData.get('email')}\n\nProyecto:\n${formData.get('mensaje')}`);
-        contactForm.querySelector('.form-status').textContent = 'Abrimos tu correo para que puedas enviar la consulta.';
-        location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+        const name = String(formData.get('nombre') || '').trim();
+        const email = String(formData.get('email') || '').trim();
+        const message = String(formData.get('mensaje') || '').trim();
+        const honeypot = String(formData.get('website') || '').trim();
+
+        if (honeypot) {
+          formStatus.textContent = 'Gracias, recibimos tu consulta.';
+          contactForm.reset();
+          return;
+        }
+        if (name.length < 2 || name.length > 120) {
+          formStatus.textContent = 'Ingresá un nombre válido.';
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          formStatus.textContent = 'Ingresá un email válido.';
+          return;
+        }
+        if (message.length < 10 || message.length > 3000) {
+          formStatus.textContent = 'Contanos un poco más sobre tu proyecto (entre 10 y 3000 caracteres).';
+          return;
+        }
+        if (!formEndpoint) {
+          formStatus.textContent = 'El envío está en configuración. Escribinos por WhatsApp mientras tanto.';
+          return;
+        }
+
+        submitButton.disabled = true;
+        formStatus.textContent = 'Enviando consulta…';
+        formData.append('_subject', 'Nueva consulta desde TBR Web Service');
+        formData.append('_template', 'table');
+        formData.append('_captcha', 'false');
+        try {
+          const response = await fetch(formEndpoint, {
+            method: 'POST',
+            headers: { Accept: 'application/json' },
+            body: formData
+          });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          contactForm.reset();
+          formStatus.textContent = '¡Gracias! Recibimos tu consulta y te vamos a responder pronto.';
+          trackContactEvent('contact_form_success');
+        } catch (error) {
+          formStatus.textContent = 'No pudimos enviar la consulta. Probá de nuevo o escribinos por WhatsApp.';
+          trackContactEvent('contact_form_error');
+        } finally {
+          submitButton.disabled = false;
+        }
       });
     }
 
     const projectDetails = [
-      { title: 'ELECTRO', description: 'Tienda online de tecnología para centralizar productos, marcas y categorías en una experiencia de compra clara. El diseño prioriza búsqueda, cuotas, beneficios y una grilla de productos con acceso directo a cada artículo.' },
+      { title: 'Control de stock · Hotel UTHGRA Los Cocos', description: 'Sistema de gestión para organizar el inventario del hotel. Permite consultar productos, categorías, áreas y existencias desde un panel claro y ordenado.' },
       { title: 'Uthgra Los Cocos', description: 'Sistema de gestión para organizar las tareas de limpieza de cocina. Permite planificar, hacer seguimiento del trabajo diario y mantener la operación del hotel ordenada.' },
       { title: 'Hotel UTHGRA Los Cocos', description: 'Diseño web para presentar la experiencia del hotel, sus actividades y la agenda semanal. La propuesta combina información útil, una estética cálida y un acceso directo a reservas.' }
     ];
@@ -201,6 +351,57 @@
         if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openProjectDialog(); }
       });
     });
+  </script>
+  <script>
+    (() => {
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const revealGroups = document.querySelectorAll('.reveal');
+      revealGroups.forEach(group => {
+        group.querySelectorAll(':scope > .service, :scope > .step, :scope > .project, :scope > .quote').forEach((item, index) => item.style.setProperty('--stagger', `${index * 70}ms`));
+      });
+
+      document.querySelectorAll('.browser, .project-ui').forEach((element, index) => {
+        element.classList.add('parallax');
+        element.dataset.parallaxSpeed = element.classList.contains('browser') ? '.055' : String(.018 + index * .004);
+      });
+
+      const counters = document.querySelectorAll('.chart-num');
+      const countUp = target => {
+        const end = Number(target.textContent.trim());
+        if (!Number.isFinite(end) || target.dataset.counted) return;
+        target.dataset.counted = 'true';
+        if (reduceMotion) { target.textContent = end; return; }
+        const startTime = performance.now(), duration = 600;
+        const update = now => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          target.textContent = Math.round(end * (1 - Math.pow(1 - progress, 3)));
+          if (progress < 1) requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      };
+      const countObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { countUp(entry.target); countObserver.unobserve(entry.target); }
+      }), { threshold:.7 });
+      counters.forEach(counter => countObserver.observe(counter));
+
+      if (reduceMotion) return;
+      const parallaxItems = [...document.querySelectorAll('.parallax')];
+      let ticking = false;
+      const updateParallax = () => {
+        const viewportCenter = innerHeight / 2;
+        parallaxItems.forEach(element => {
+          const rect = element.getBoundingClientRect();
+          const speed = Number(element.dataset.parallaxSpeed || .02);
+          const offset = Math.max(-14, Math.min(14, (viewportCenter - (rect.top + rect.height / 2)) * speed));
+          element.style.setProperty('--parallax-y', `${offset}px`);
+        });
+        ticking = false;
+      };
+      const requestParallax = () => { if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); } };
+      addEventListener('scroll', requestParallax, { passive:true });
+      addEventListener('resize', requestParallax, { passive:true });
+      requestParallax();
+    })();
   </script>
 </body>
 </html>
